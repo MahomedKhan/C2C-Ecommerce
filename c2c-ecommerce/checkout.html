@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout - Khanival City Tech Marketplace</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Floating Logo -->
+  <header class="floating-logo">
+    <img src="img/logo.png" alt="C2C Logo">
+  </header>
+
+  <div class="container mt-5 mb-5">
+    <h2 class="text-center mb-4">Checkout</h2>
+
+    <div class="row">
+      <!-- Billing and Shipping Address -->
+      <div class="col-md-6">
+        <form>
+          <h4>Billing Address</h4>
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" required>
+          </div>
+          <div class="mb-3">
+            <label for="billingAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="billingAddress" required>
+          </div>
+          <div class="mb-3">
+            <label for="billingCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="billingCity" required>
+          </div>
+          <div class="mb-3">
+            <label for="billingZip" class="form-label">ZIP Code</label>
+            <input type="text" class="form-control" id="billingZip" required>
+          </div>
+
+          <h4 class="mt-4">Shipping Address</h4>
+          <div class="mb-3">
+            <label for="shippingAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="shippingAddress" required>
+          </div>
+          <div class="mb-3">
+            <label for="shippingCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="shippingCity" required>
+          </div>
+          <div class="mb-3">
+            <label for="shippingZip" class="form-label">ZIP Code</label>
+            <input type="text" class="form-control" id="shippingZip" required>
+          </div>
+        </form>
+      </div>
+
+      <!-- Order Summary -->
+      <div class="col-md-6">
+        <h4>Order Summary</h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between">
+            <div>
+              <h6 class="my-0">Apple AirPods Pro</h6>
+              <small class="text-muted">Quantity: 1</small>
+            </div>
+            <span class="text-muted">R3,499.00</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (ZAR)</span>
+            <strong>R3,499.00</strong>
+          </li>
+        </ul>
+
+        <h4>Shipping Method</h4>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="shippingMethod" id="standardShipping" checked>
+          <label class="form-check-label" for="standardShipping">
+            Standard (2–5 days) - R60.00
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="radio" name="shippingMethod" id="expressShipping">
+          <label class="form-check-label" for="expressShipping">
+            Express (1–2 days) - R120.00
+          </label>
+        </div>
+
+        <h4>Payment Options</h4>
+        <div class="mb-3">
+          <img src="img/payment-icons.png" alt="Payment Methods" class="img-fluid">
+        </div>
+
+        <button class="btn btn-success w-100">Place Order</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
