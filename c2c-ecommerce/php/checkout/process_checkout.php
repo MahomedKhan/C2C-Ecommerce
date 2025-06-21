@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Clear cart
   unset($_SESSION['cart']);
 
-  header("Location: ../thank_you.php?order_id=$orderId");
+  header("Location: ../thanks.php?order_id=$orderId");
   exit();
 } else {
   header("Location: ../index.html");
